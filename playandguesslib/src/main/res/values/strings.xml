@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PlayandGuessLib</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_ready_tips">请将屏幕对准你的小伙伴</string>
+    <string name="play_right_tips">您答对了%s道题</string>
+</resources>

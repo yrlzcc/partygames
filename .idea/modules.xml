@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselib/baselib.iml" filepath="$PROJECT_DIR$/baselib/baselib.iml" />
       <module fileurl="file://$PROJECT_DIR$/partygames.iml" filepath="$PROJECT_DIR$/partygames.iml" />
+      <module fileurl="file://$PROJECT_DIR$/playandguesslib/playandguesslib.iml" filepath="$PROJECT_DIR$/playandguesslib/playandguesslib.iml" />
     </modules>
   </component>
 </project>

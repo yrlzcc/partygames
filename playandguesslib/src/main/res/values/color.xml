@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_play_back_normal">#275282</color>
+    <color name="color_play_back_right">#578433</color>
+    <color name="color_play_back_skip">#9c7329</color>
+    <color name="color_play_back_timeup">#cc5843</color>
+    <color name="color_play_text">#ffffffff</color>
+</resources>

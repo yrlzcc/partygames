@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_play_back_normal"
+    tools:context=".PlayActivity">
+
+    <partygames.shirley.com.baselib.view.AutoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></partygames.shirley.com.baselib.view.AutoScrollViewPager>
+
+    <TextView
+        android:id="@+id/gplay_tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_play_text"
+        android:gravity="center"
+        android:text="@string/play_ready_tips"
+        android:layout_centerInParent="true"
+        android:textSize="48dp"/>
+
+    <TextView
+        android:id="@+id/gplay_tv_time"
+        android:layout_below="@id/gplay_tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_play_text"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="time" />
+
+</RelativeLayout>

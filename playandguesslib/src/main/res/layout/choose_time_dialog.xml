@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_back"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_choose_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="随机"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/dialog_choose_time_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_choose_time_title"
+        android:layout_gravity="center"
+        android:text="海量题库，随机选择，保证三天三夜不重样"
+        android:textColor="#ff000000"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_ll_choose_time"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_choose_time_content"
+        android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/dialog_choose_time_60s"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text="60s"
+           android:textSize="16dip"
+           android:drawableBottom="@drawable/btn_check_selector"/>
+
+        <TextView
+            android:id="@+id/dialog_choose_time_90s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="90s"
+            android:drawableBottom="@drawable/btn_check_selector"/>
+
+        <TextView
+            android:id="@+id/dialog_choose_time_180s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180s"
+            android:drawableBottom="@drawable/btn_check_selector"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/dialog_choose_time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_ll_choose_time"
+        android:layout_centerHorizontal="true"
+        android:text="开始"
+        android:textSize="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/play_fragment_rl"
+    android:background="@color/color_play_back_normal"
+    tools:context="partygames.shirley.com.playandguesslib.ForeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/play_fragment_tv_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_play_text"
+        android:gravity="center"
+        android:text="@string/play_ready_tips"
+        android:layout_centerInParent="true"
+        android:textSize="72dp"/>
+
+    <TextView
+        android:id="@+id/play_fragment_tv_time"
+        android:layout_below="@id/play_fragment_tv_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_play_text"
+        android:textSize="48dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="time" />
+
+</RelativeLayout>
