@@ -13,17 +13,7 @@ import partygames.shirley.com.baselib.utils.Utils;
 public class SettingPreferences {
   private static final String SETTING_PRE_NAME = "setting_pre_config";
 
-    public static final String KEY_SETTING_SWITCH_CONFLICT = "key_setting_switch_conflict";
-    public static final String KEY_SETTING_SWITCH_TIPS = "key_setting_switch_tips";
-    public static final String KEY_SETTING_SWITCH_SOUND = "key_setting_switch_sound";
-    public static final String  KEY_CURRENT_SUDOKU_DATA = "key_current_sudoku_data";
-    public static final String  KEY_CURRENT_SUDOKU_INPUTLIST = "key_current_sudoku_inputlist";
-    public static final String  KEY_CURRENT_SUDOKU_INPUTLIST_CURSOR = "key_current_sudoku_inputlist_cursor";
-    public static final String  KEY_CURRENT_SUDOKU_SELECTION = "key_current_sudoku_selection";
-    public static final String  KEY_CURRENT_SUDOKU_ISMARK = "key_current_sudoku_ismark";
-    public static final String  KEY_CURRENT_SUDOKU_CURRENTLEVEL = "key_current_sudoku_level";
-    public static final String  KEY_CURRENT_SUDOKU_TIME = "key_current_sudoku_time";
-    public static final String  KEY_CURRENT_CURRENT_GRADE = "key_current_current_grade";
+    public static final String KEY_SETTING_SOUND = "key_setting_sound";
     /** 是否是首次运行 */
     public static final String KEY_FIRST_LUNCH = "first_lunch";
 

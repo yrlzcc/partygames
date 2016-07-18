@@ -5,4 +5,5 @@
     <color name="color_play_back_skip">#9c7329</color>
     <color name="color_play_back_timeup">#cc5843</color>
     <color name="color_play_text">#ffffffff</color>
+    <color name="color_dialog_tv_content">#ff9e6a2a</color>  <!--dialog上内容颜色 -->
 </resources>

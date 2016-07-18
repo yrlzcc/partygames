@@ -1,5 +1,32 @@
 apply plugin: 'com.android.application'
 
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':baselib')
+    compile project(':playandguesslib')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}
+
+
+/**
+ *
+ * 获取时间戳
+ */
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd')
+    return formattedDate
+}
+/**
+ *
+ * 从AndroidManifest.xml中获取版本号
+ */
+def getVersionNameFromManifest() {
+    def manifestParser = new com.android.builder.core.DefaultManifestParser()
+    return manifestParser.getVersionName(android.sourceSets.main.manifest.srcFile)
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -9,20 +36,113 @@ android {
         minSdkVersion 11
         targetSdkVersion 23
         versionCode 1
-        versionName "activity_play.0"
+        versionName "1.0"
     }
+
+    /**
+     *  忽略编译错误
+     */
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    /**
+     * 配置签名文件 release＋debug
+     */
+    signingConfigs {
+        debug {
+            keyAlias 'sudoku'
+            keyPassword 'sudokuxia'
+            storeFile file('sudoku.debugkey')
+            storePassword 'sudokuxia'
+        }
+        release {
+            keyAlias 'sudoku'
+            keyPassword 'sudokuxia'
+            storeFile file('sudoku.releasekey')
+            storePassword 'sudokuxia'
+        }
+    }
+
     buildTypes {
+        /**
+         * 配置编译类型
+         */
+        debug {
+            signingConfig signingConfigs.debug
+        }
         release {
             minifyEnabled false
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    /**
+     * 配置渠道名称
+     */
+    productFlavors  {
+        update {}
+        baidu {}
+        android {}
+//        anzhi {}
+        '360' {}
+        androidyuan {}
+        anfen {}
+        anbei {}
+        anzhuozhijia {}
+        youmi {}
+        tengxun {}
+        '91' {}
+//        jifeng {}
+        xiaomi {}
+//        Nduo {}
+//        appchina {}
+//        wandoujia {}
+//        oppo {}
+//        '10086' {}
+//        meizu {}
+//        eoemarket {}
+//        yiyonghui {}
+//        huawei {}
+//        talkphone {}
+//        google {}
+//        mumayi {}
+//        leshangdian {}
+//        aliyun {}
+//        samsung {}
+//        wangyi {}
+//        woshangdian {}
+//        taobao {}
+//        pp {}
+//        sougou {}
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }
+
+    /**
+     * 批量打包修改生成的apk名字
+     */
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+                def releaseApkName = 'partygame' + getDate() + '_v' + getVersionNameFromManifest() + '_' + variant.productFlavors[0].name + '_release' + '.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+
+            if (variant.buildType.name.equals('debug')) {
+                def debugApkName = 'partygame' + getDate() + '_v' + getVersionNameFromManifest() + '_' + variant.productFlavors[0].name + '_debug' + '.apk'
+                output.outputFile = new File(oldFile.parent, debugApkName)
+            }
         }
     }
 }
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':baselib')
-    compile project(':playandguesslib')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-}

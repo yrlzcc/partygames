@@ -1,11 +1,13 @@
 package partygames.shirley.com.playandguesslib.model;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2016/6/29.
  */
 public class GroupData{
     private int type = 1;   //类别
-    private String[] words; //词语
+    private List<String> words; //词语
 
     public int getType() {
         return type;
@@ -15,11 +17,11 @@ public class GroupData{
         this.type = type;
     }
 
-    public String[] getWords() {
+    public List<String> getWords() {
         return words;
     }
 
-    public void setWords(String[] words) {
+    public void setWords(List<String> words) {
         this.words = words;
     }
 }

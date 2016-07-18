@@ -15,12 +15,12 @@ import com.umeng.analytics.MobclickAgent;
 
 public class BaseActivity extends FragmentActivity {
 	public static final boolean isDebug = false; // app是否是测试包
+	protected static boolean isSoundOpen = true;  //声音是否打开
 	protected static final int SETTING = 10;
 	public boolean isDestory;
 	public boolean isResume;
 	private boolean exit;
 	private ApplicationManager applicationManager;
-	protected BaseApplication app = BaseApplication.getInstance();
 
 	@Override
 	protected void onCreate(Bundle arg0) {

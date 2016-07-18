@@ -5,18 +5,17 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
-import android.util.Log;
-
-import java.util.List;
-import android.os.CountDownTimer;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import java.util.Collections;
+import java.util.List;
 
 import partygames.shirley.com.baselib.BaseActivity;
 import partygames.shirley.com.baselib.view.AutoScrollViewPager;
@@ -26,10 +25,11 @@ public class PlayActivity extends BaseActivity {
     private static final int STATE_NONE = 0; //初始状态
     private static final int STATE_READY = 1; //准备状态
     private static final int STATE_PLAY = 2; //准备状态
-    private static final int MODE_NONE = 3;  //竖立，准备，出词
-    private static final int MODE_VERTICAL = 4;  //竖立，准备，出词
-    private static final int MODE_UP = 5;   //上翻，跳过
-    private static final int MODE_DOWN = 6; //下翻，正确
+    private static final int STATE_OVER = 3; //准备状态
+    private static final int MODE_NONE = 4;  //竖立，准备，出词
+    private static final int MODE_VERTICAL = 5;  //竖立，准备，出词
+    private static final int MODE_UP = 6;   //上翻，跳过
+    private static final int MODE_DOWN = 7; //下翻，正确
     private static final int MESSAGE_TIME_UP = 10;
     private Handler handler = new Handler(Looper.getMainLooper());
     private AutoScrollViewPager viewPager;
@@ -48,20 +48,24 @@ public class PlayActivity extends BaseActivity {
     private String[] data = {"aa","bb","cc","dd","ff","gg"};
     private PlayCount mc;
     private ReadyCount rc;
-    private String[] words = null;
+    private List<String> words = null;
     private int state = STATE_NONE;
     private TextView gplay_tv_tips;
     private TextView gplay_tv_time;
     private WordState wordState;
-    private int time;  //时间
+    private static int time;  //时间
+    private static int type;
+    private SoundUtils soundUtils = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-        int type = getIntent().getIntExtra("type",0);
+        type = getIntent().getIntExtra("type",0);
         time = getIntent().getIntExtra("time",6000);
         words = GBaseData.getInstance().guessResult.getGrouplist().get(type).getWords();
+        Collections.shuffle(words);
+        soundUtils = new SoundUtils(this);
         viewPager = (AutoScrollViewPager) findViewById(R.id.view_pager);
         gplay_tv_tips = (TextView)findViewById(R.id.gplay_tv_tips);
         gplay_tv_time = (TextView)findViewById(R.id.gplay_tv_time);
@@ -77,13 +81,13 @@ public class PlayActivity extends BaseActivity {
         sensorEventListener = new MySensorEventListener();
         aSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         mSensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
-        sensorManager.registerListener(sensorEventListener, aSensor, SensorManager.SENSOR_DELAY_NORMAL);
-        sensorManager.registerListener(sensorEventListener, mSensor,SensorManager.SENSOR_DELAY_NORMAL);
         setPagerVisible();
         GBaseData.getInstance().clear();
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setOnStateChangeLister(new StateChangeListener() {
             @Override
             public void onStateChangeListener() {
+//                System.out.println("-------------------------onstatechange");
                 String str = "";
                 if(state == STATE_READY){
                     str = "准备";
@@ -95,15 +99,17 @@ public class PlayActivity extends BaseActivity {
                 else if(state == STATE_PLAY) {
                     if (currentMode == MODE_VERTICAL) {
                         viewPager.autoScrollToNext();
+                        playSound(SoundUtils.CARD_OPEN);
                     } else if (currentMode == MODE_DOWN) {
+                        playSound(SoundUtils.CORRECT);
                         wordState = new WordState();
                         wordState.setWord(adapter.getCurrentContent());
                         wordState.setIsright(true);
-
                         GBaseData.getInstance().addWord(wordState);
                         str = "正确";
                         adapter.updateContent(str);
                     } else if (currentMode == MODE_UP) {
+                        playSound(SoundUtils.PASS);
                         wordState = new WordState();
                         wordState.setWord(adapter.getCurrentContent());
                         str = "跳过";
@@ -114,6 +120,12 @@ public class PlayActivity extends BaseActivity {
                 }
             }
         });
+    }
+
+    private void playSound(int type){
+        if(isSoundOpen){
+            soundUtils.playSound(type,0);
+        }
     }
 
     /**
@@ -143,17 +155,17 @@ public class PlayActivity extends BaseActivity {
 
         @Override
         public void onPageSelected(int arg0) {
-            System.out.println("onPageSelected---------------------" + arg0);
+//            System.out.println("onPageSelected---------------------" + arg0);
         }
 
         @Override
         public void onPageScrolled(int arg0, float arg1, int arg2) {
-            System.out.println("onPageScrolled---------------------" + arg0);
+//            System.out.println("onPageScrolled---------------------" + arg0);
         }
 
         @Override
         public void onPageScrollStateChanged(int arg0) {
-            System.out.println("onPageScrollStateChanged---------------------" + arg0);
+//            System.out.println("onPageScrollStateChanged---------------------" + arg0);
         }
     }
 
@@ -183,20 +195,25 @@ public class PlayActivity extends BaseActivity {
         // 要经过一次数据格式的转换，转换为度
         values[2] = (float) Math.toDegrees(values[2]);
         float v = Math.abs(values[2]);
-        Log.i(TAG, String.valueOf(v));
-        if(v >= 80 && v <= 100){
+        if(v == 0){
+            return;
+        }
+//        Log.i(TAG, String.valueOf(v));
+        if(v >= 75 && v <= 105){
             mode = MODE_VERTICAL;
-            Log.i(TAG, "竖起");
+//            Log.i(TAG, "竖起");
         }
-        else if(v >= 150 && v <= 180){
+        else if(v >= 120 && v <= 180){
             mode = MODE_DOWN;
-            Log.i(TAG, "下翻");
+//            Log.i(TAG, "下翻");
         }
-        else if(v >= 0 && v <= 30){
+        else if(v >= 0 && v <= 60){
             mode = MODE_UP;
-            Log.i(TAG, "上翻");
+//            Log.i(TAG, "上翻");
         }
-        if(currentMode != mode){
+//        System.out.println("------------------------value:currentM" + currentMode);
+//        System.out.println("------------------------value:mode" + mode);
+        if(currentMode != mode && state != STATE_OVER){
             if(state == STATE_NONE && mode == MODE_VERTICAL){//初始状态只能响应竖立状态
                 state = STATE_READY;
             }
@@ -217,14 +234,16 @@ public class PlayActivity extends BaseActivity {
     //我们在onResume方法中创建重力传感器，并向系统注册监听器
     protected void onResume() {
         Sensor sensor_accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY);
-        sensorManager.registerListener(sensorEventListener, sensor_accelerometer, SensorManager.SENSOR_DELAY_GAME);
+        sensorManager.registerListener(sensorEventListener, aSensor, SensorManager.SENSOR_DELAY_GAME);
+        sensorManager.registerListener(sensorEventListener, mSensor,SensorManager.SENSOR_DELAY_GAME);
         super.onResume();
     }
 
     //最后我们在onPause()中注销所有传感器的监听，释放重力感应器资源!
     protected void onPause() {
     // 注销所有传感器的监听
-        sensorManager.unregisterListener(sensorEventListener);
+        sensorManager.unregisterListener(sensorEventListener,aSensor);
+        sensorManager.unregisterListener(sensorEventListener,mSensor);
         super.onPause();
     }
 
@@ -270,6 +289,8 @@ public class PlayActivity extends BaseActivity {
             if(adapter != null){
                 adapter.updateContent("时间到");
                 adapter.updateTime("");
+                state = STATE_OVER;
+                playSound(SoundUtils.TIMEUP);
                 handler.postDelayed(runnable, 3000);
             }
         }
@@ -287,7 +308,16 @@ public class PlayActivity extends BaseActivity {
         @Override
         public void run() {
             Intent intent = new Intent(PlayActivity.this,CompleteActivity.class);
+            finish();
             startActivity(intent);
         }
     };
+
+    @Override
+    public void onBackPressed() {
+        if(mc != null){
+            mc.cancel();
+        }
+        super.onBackPressed();
+    }
 }

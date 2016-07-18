@@ -11,7 +11,9 @@ import partygames.shirley.com.baselib.BaseActivity;
 import partygames.shirley.com.baselib.SettingPreferences;
 import partygames.shirley.com.baselib.utils.ReadAssetUtil;
 import partygames.shirley.com.baselib.utils.Utils;
+import partygames.shirley.com.playandguesslib.AdUtils;
 import partygames.shirley.com.playandguesslib.GBaseData;
+import partygames.shirley.com.playandguesslib.GMenuActivity;
 import partygames.shirley.com.playandguesslib.model.GuessResult;
 
 public class SplashActivity extends BaseActivity {
@@ -22,6 +24,7 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+		AdUtils.openSplashAd(this,null);
 
 
 	new Thread(new Runnable() {
@@ -42,7 +45,6 @@ public class SplashActivity extends BaseActivity {
 		public void handleMessage(android.os.Message msg) {
 			switch(msg.what){
 				case READ_COMPLETE:
-					finish();
 					handler.postDelayed(runnable, 1500);
 					break;
 			}
@@ -82,7 +84,7 @@ public class SplashActivity extends BaseActivity {
 
 	private Intent getNextIntent(boolean isWeb) {
 		Intent intent;
-		intent  = new Intent(this,MainActivity.class);
+		intent  = new Intent(this,GMenuActivity.class);
 		return intent;
 	}
 }

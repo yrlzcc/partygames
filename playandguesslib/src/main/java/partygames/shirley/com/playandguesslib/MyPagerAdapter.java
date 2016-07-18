@@ -1,5 +1,6 @@
 package partygames.shirley.com.playandguesslib;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -7,13 +8,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.util.HashMap;
 import java.util.List;
-
-import partygames.shirley.com.playandguesslib.model.GroupData;
 
 /**
  * Created by Administrator on 2016/6/30.
@@ -25,9 +22,9 @@ public class MyPagerAdapter extends PagerAdapter {
     public int mIndex;//滑动索引
     public View view;
     private String strTime;
-    private String[] words = null;
+    private List<String> words = null;
 
-    public MyPagerAdapter(Context mContext,String[] data) {
+    public MyPagerAdapter(Context mContext,List<String> data) {
 //        this.listViews = listViews;
         this.mContext = mContext;
         words = data;
@@ -58,9 +55,10 @@ public class MyPagerAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
        Log.v("TipsPagerAdapter", "instantiateItem is called   " + position);
         view = LayoutInflater.from(mContext).inflate(R.layout.fragment_fore, null);
+        AdUtils.openBanner((Activity)mContext,view);
         TextView tv = (TextView)view.findViewById(R.id.play_fragment_tv_word);
-        position = position%words.length;
-        tv.setText(words[position]);
+        position = position%words.size();
+        tv.setText(words.get(position));
         try {
             ((ViewPager) container).addView(view);
         } catch (Exception e) {
@@ -92,9 +90,13 @@ public class MyPagerAdapter extends PagerAdapter {
     }
 
     public String getCurrentContent(){
+        Log.v("TipsPagerAdapter", "getCurrentContent is called   " + mCurrentView);
         if(mCurrentView != null){
             TextView tv = (TextView)mCurrentView.findViewById(R.id.play_fragment_tv_word);
             return tv.getText().toString();
+        }
+        if(words != null && words.size() > 0){
+            return words.get(0);
         }
         return "";
     }

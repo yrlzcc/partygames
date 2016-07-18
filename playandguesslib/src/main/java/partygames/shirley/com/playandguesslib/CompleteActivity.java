@@ -35,6 +35,7 @@ public class CompleteActivity extends BaseActivity implements View.OnClickListen
         rightnum = getRightnum();
         complete_right_tips = (TextView)findViewById(R.id.complete_right_tips);
         complete_right_tips.setText(context.getString(R.string.play_right_tips,rightnum));
+        AdUtils.openTestAd(context);
     }
 
     /**
@@ -59,8 +60,7 @@ public class CompleteActivity extends BaseActivity implements View.OnClickListen
     public void onClick(View v) {
         int id = v.getId();
         if(id == R.id.complete_left_iv_home){
-            Intent intent = new Intent(CompleteActivity.this,GMenuActivity.class);
-            startActivity(intent);
+            finish();
         }
         else if(id == R.id.complete_left_iv_again){
             Intent intent = new Intent(CompleteActivity.this,PlayActivity.class);

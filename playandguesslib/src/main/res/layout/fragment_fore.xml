@@ -7,6 +7,15 @@
     android:background="@color/color_play_back_normal"
     tools:context="partygames.shirley.com.playandguesslib.ForeFragment">
 
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+    </LinearLayout>
+
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/play_fragment_tv_word"
