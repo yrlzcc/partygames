@@ -1,6 +1,5 @@
 package partygames.shirley.com.playandguesslib;
 
-import android.app.Activity;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -55,7 +54,7 @@ public class MyPagerAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
        Log.v("TipsPagerAdapter", "instantiateItem is called   " + position);
         view = LayoutInflater.from(mContext).inflate(R.layout.fragment_fore, null);
-        AdUtils.openBanner((Activity)mContext,view);
+//        AdUtils.openBanner((Activity)mContext,view);
         TextView tv = (TextView)view.findViewById(R.id.play_fragment_tv_word);
         position = position%words.size();
         tv.setText(words.get(position));

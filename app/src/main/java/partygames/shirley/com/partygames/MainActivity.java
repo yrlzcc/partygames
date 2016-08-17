@@ -1,4 +1,5 @@
 package partygames.shirley.com.partygames;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.Toast;
 import partygames.shirley.com.baselib.BaseActivity;
 import partygames.shirley.com.partygames.view.CircleMenuLayout;
 import partygames.shirley.com.playandguesslib.GMenuActivity;
+import partygames.shirley.com.undercoverlib.UnderCoverSetting;
 
 public class MainActivity extends BaseActivity {
 
@@ -39,6 +41,10 @@ public class MainActivity extends BaseActivity {
                         Toast.LENGTH_SHORT).show();
                 if(pos == 0){
                     Intent intent = new Intent(MainActivity.this,GMenuActivity.class);
+                    startActivity(intent);
+                }
+                else if(pos == 1){
+                    Intent intent = new Intent(MainActivity.this,UnderCoverSetting.class);
                     startActivity(intent);
                 }
 

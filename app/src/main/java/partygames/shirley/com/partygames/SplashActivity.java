@@ -1,9 +1,9 @@
 package partygames.shirley.com.partygames;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.Bundle;
 
 import com.google.gson.Gson;
 
@@ -11,9 +11,8 @@ import partygames.shirley.com.baselib.BaseActivity;
 import partygames.shirley.com.baselib.SettingPreferences;
 import partygames.shirley.com.baselib.utils.ReadAssetUtil;
 import partygames.shirley.com.baselib.utils.Utils;
-import partygames.shirley.com.playandguesslib.AdUtils;
+import partygames.shirley.com.baselib.utils.AdUtils;
 import partygames.shirley.com.playandguesslib.GBaseData;
-import partygames.shirley.com.playandguesslib.GMenuActivity;
 import partygames.shirley.com.playandguesslib.model.GuessResult;
 
 public class SplashActivity extends BaseActivity {
@@ -84,7 +83,7 @@ public class SplashActivity extends BaseActivity {
 
 	private Intent getNextIntent(boolean isWeb) {
 		Intent intent;
-		intent  = new Intent(this,GMenuActivity.class);
+		intent  = new Intent(this,Main2Activity.class);
 		return intent;
 	}
 }

@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baselib" />
             <option value="$PROJECT_DIR$/playandguesslib" />
+            <option value="$PROJECT_DIR$/undercoverlib" />
           </set>
         </option>
         <option name="myModules">
@@ -19,6 +20,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baselib" />
             <option value="$PROJECT_DIR$/playandguesslib" />
+            <option value="$PROJECT_DIR$/undercoverlib" />
           </set>
         </option>
       </GradleProjectSettings>

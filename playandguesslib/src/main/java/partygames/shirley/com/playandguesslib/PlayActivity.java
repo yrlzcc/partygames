@@ -18,6 +18,7 @@ import java.util.Collections;
 import java.util.List;
 
 import partygames.shirley.com.baselib.BaseActivity;
+import partygames.shirley.com.baselib.SettingPreferences;
 import partygames.shirley.com.baselib.view.AutoScrollViewPager;
 import partygames.shirley.com.playandguesslib.model.WordState;
 
@@ -61,8 +62,8 @@ public class PlayActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-        type = getIntent().getIntExtra("type",0);
-        time = getIntent().getIntExtra("time",6000);
+        type = SettingPreferences.getValue(this,SettingPreferences.GUESS_SETTING_TYPE,0);
+        time = SettingPreferences.getValue(this,SettingPreferences.GUESS_SETTING_TIME,60000);
         words = GBaseData.getInstance().guessResult.getGrouplist().get(type).getWords();
         Collections.shuffle(words);
         soundUtils = new SoundUtils(this);
@@ -203,11 +204,11 @@ public class PlayActivity extends BaseActivity {
             mode = MODE_VERTICAL;
 //            Log.i(TAG, "竖起");
         }
-        else if(v >= 120 && v <= 180){
+        else if(v >= 150 && v <= 180){
             mode = MODE_DOWN;
 //            Log.i(TAG, "下翻");
         }
-        else if(v >= 0 && v <= 60){
+        else if(v >= 0 && v <= 30){
             mode = MODE_UP;
 //            Log.i(TAG, "上翻");
         }

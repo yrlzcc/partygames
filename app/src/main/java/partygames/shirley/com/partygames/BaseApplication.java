@@ -5,7 +5,7 @@ import android.app.Application;
 import com.pgyersdk.crash.PgyCrashManager;
 import com.umeng.analytics.MobclickAgent;
 
-import partygames.shirley.com.playandguesslib.AdUtils;
+import partygames.shirley.com.baselib.utils.AdUtils;
 import th.ds.wa.AdManager;
 import th.ds.wa.normal.spot.SpotManager;
 

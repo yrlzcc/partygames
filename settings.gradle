@@ -1,1 +1,1 @@
-include ':app', ':baselib', ':playandguesslib'
+include ':app', ':baselib', ':playandguesslib', ':undercoverlib'

@@ -1,4 +1,4 @@
-package partygames.shirley.com.playandguesslib;
+package partygames.shirley.com.baselib.utils;
 
 //import net.youmi.android.AdManager;
 //import net.youmi.android.banner.AdSize;
@@ -10,7 +10,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.LinearLayout;
-
 import th.ds.wa.AdManager;
 import th.ds.wa.normal.banner.BannerManager;
 import th.ds.wa.normal.spot.SpotDialogListener;
@@ -25,16 +24,6 @@ public class AdUtils {
     public static boolean isOpen = true;
     public static boolean isSplashOpen = true;
     public static boolean isBannerOpen = true;
-    public static void setAD(Activity context,View view){
-        // 实例化广告条
-        View adView = BannerManager.getInstance(context).getBanner(context);
-
-        // 获取要嵌入广告条的布局
-        LinearLayout adLayout=(LinearLayout)view.findViewById(R.id.adLayout);
-
-        // 将广告条加入到布局中
-        adLayout.addView(adView);
-    }
 
     public static void setAdInViewGroup(Activity context,LinearLayout adLayout){
 
@@ -96,11 +85,5 @@ public class AdUtils {
             SpotManager.getInstance(context).showSplashSpotAds(context,cls);
         }
         return isSplashOpen;
-    }
-
-    public static void openBanner(Activity context,View view){
-        if(isBannerOpen){
-            setAD(context,view);
-        }
     }
 }

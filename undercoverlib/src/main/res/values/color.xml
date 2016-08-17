@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gamepink">#F7A6B5</color>
+    <color name="gamegreen">#BEEEA9</color>
+    <color name="gamepurple">#AE7BB3</color>
+    <color name="gameyellow">#D9A56A</color>
+    <color name="gameblue">#ADD3E1</color>
+    <color name="gamered">#CE4848</color>
+    <color name="gamepink2">#C53C78</color>
+    <color name="gamegreen2">#76A11D</color>
+    <color name="gamepurple2">#716589</color>
+    <color name="gameyellow2">#F7F5CE</color>
+    <color name="gameblue2">#46A3DF</color>
+    <color name="gamered2">#942630</color>
+
+    <color name="tv_dialog_text">#ff9e6a2a</color>   <!-- dialog上文字颜色-->
+    <color name="top_tips_back">#f8e8b0</color>
+</resources>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">undercover</string>
+    <string name="add">+</string>
+    <string name="blank"></string>
+    <string name="开始游戏">开始游戏</string>
+
+    <string name="返回">返回</string>
+
+    <string name="谁是卧底">谁是卧底</string>
+    <string name="normalman">平民</string>
+    <string name="underman">卧底</string>
+
+    <string name="杀">杀</string>
+
+    <string name="卧">卧</string>
+
+    <string name="杀人游戏">杀人游戏</string>
+
+    <string name="身份">身份</string>
+    <string name="参与人数">参与人数</string>
+    <string name="num4">4</string>
+
+    <string name="undercover_num">卧底%s人</string>
+    <string name="normalnum">平民%s人</string>
+    <string name="undercover_num_change">卧底人数调整</string>
+    <string name="punishmen">开始惩罚</string>
+    <string name="重新开始">重新开始</string>
+    <string name="txtPolice">"警官"</string>
+    <string name="txtKiller">"杀手"</string>
+    <string name="txtFaGuan">"法官"</string>
+    <string name="txtNormal">"平民"</string>
+
+    <string name="PunishInTurn">请输的同学依次接受惩罚</string>
+    <string name="nextQuestion">下一题</string>
+    <string name="GameOver">游戏结束</string>
+    <string name="dangerrate">危险级数：</string>
+    <string name="click">点击了%d次</string>
+    <string name="shibaizhe">接受惩罚:</string>
+    <string name="fayan">发言顺序:</string>
+    <string name="hao">%s号\t</string>
+    <string name="forget_word">忘词</string>
+    <string name="remember">我记住了</string>
+
+    <string name="下一条">下一条</string>
+    <string name="真心话大冒险">真心话大冒险</string>
+    <string name="网络词汇">网络词汇</string>
+    <string name="本地词汇">本地词汇</string>
+    <string name="first_to_see">%s号请翻牌</string>
+    <string name="other_to_see">传递手机，%s号请翻牌</string>
+    <string name="forget_word_tips">点击自己的头像再看一遍词语</string>
+</resources>

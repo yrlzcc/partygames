@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import partygames.shirley.com.baselib.BaseActivity;
+import partygames.shirley.com.baselib.utils.AdUtils;
 import partygames.shirley.com.playandguesslib.model.WordState;
 
 public class CompleteActivity extends BaseActivity implements View.OnClickListener {

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back">
+
+    <Button
+        android:id="@+id/btn_forget_word"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_back_xml"
+        android:text="@string/forget_word"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <GridView
+        android:id="@+id/tableContent"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_forget_word"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTitle"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"></GridView>
+
+    <TextView
+        android:id="@+id/tv_forget_word_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_forget_word"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/forget_word_tips"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="@color/tv_dialog_text"
+        android:background="@color/top_tips_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/top_tips_back"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="tips"
+        android:textColor="@color/tv_dialog_text"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_forget_word_show"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/top_tips_back"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:text="tips"
+        android:visibility="gone" />
+
+</RelativeLayout>

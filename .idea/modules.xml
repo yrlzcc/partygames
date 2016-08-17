@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/baselib/baselib.iml" filepath="$PROJECT_DIR$/baselib/baselib.iml" />
       <module fileurl="file://$PROJECT_DIR$/partygames.iml" filepath="$PROJECT_DIR$/partygames.iml" />
       <module fileurl="file://$PROJECT_DIR$/playandguesslib/playandguesslib.iml" filepath="$PROJECT_DIR$/playandguesslib/playandguesslib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/undercoverlib/undercoverlib.iml" filepath="$PROJECT_DIR$/undercoverlib/undercoverlib.iml" />
     </modules>
   </component>
 </project>

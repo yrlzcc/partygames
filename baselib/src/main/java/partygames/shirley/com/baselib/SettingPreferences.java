@@ -17,6 +17,16 @@ public class SettingPreferences {
     /** 是否是首次运行 */
     public static final String KEY_FIRST_LUNCH = "first_lunch";
 
+    public static final String GUESS_SETTING_TYPE = "type";  //猜词类型
+    public static final String GUESS_SETTING_TIME = "time";  //猜词时间
+
+    public static final String UNDERCOVER_SETTING_PEOPLECOUNT = "peopleCount";  //参与人数
+    public static final String UNDERCOVER_SETTING_UNDERCOUNT = "underCount";  //卧底人数
+    public static final String UNDERCOVER_SETTING_NORMALCOUNT = "normalCount"; //平民人数
+    public static final String UNDERCOVER_SETTING_ISBLANK = "isBlank"; //是否白板
+    public static final String UNDERCOVER_SETTING_CONTENT = "content"; // 每个人选的词组
+    public static final String UNDERCOVER_SETTING_UNDERCOVER_WORD = "undercoverword"; // 卧底词组
+    public static final String UNDERCOVER_SETTING_NORMAL_WORD = "normalword"; // 平民词组
     /**
      * @param context
      *            上下文对象

@@ -18,4 +18,9 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
+    <!-- 设置旋转菜单对应的第一张图片 -->
+    <declare-styleable name="RoundSpinView">
+        <attr name="menuStart" format="reference" />
+    </declare-styleable>
+
 </resources>

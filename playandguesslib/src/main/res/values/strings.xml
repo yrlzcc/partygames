@@ -7,5 +7,4 @@
     <string name="play_right_tips">您答对了%s道题</string>
     <string name="download_tips">下载</string>
     <string name="dialog_content">tips:手机屏幕对着小伙伴;回答正确，手机向下翻转;跳过，手机向上翻转</string>
-    <string name="menu_help">tips1:将手机屏幕对准你的小伙伴，背面对着自己\n\ntips2:回答正确，手机向下翻转，屏幕对着地面\n\ntips3:实在想不出来，想跳过，手机向上翻转，屏幕对着天空\n\ntips4:每次翻转过后，回到屏幕对着小伙伴状态，切换到下一题</string>
 </resources>
