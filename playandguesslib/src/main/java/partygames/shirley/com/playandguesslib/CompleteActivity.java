@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import partygames.shirley.com.baselib.BaseActivity;
-import partygames.shirley.com.baselib.utils.AdUtils;
 import partygames.shirley.com.playandguesslib.model.WordState;
 
 public class CompleteActivity extends BaseActivity implements View.OnClickListener {
@@ -36,7 +35,7 @@ public class CompleteActivity extends BaseActivity implements View.OnClickListen
         rightnum = getRightnum();
         complete_right_tips = (TextView)findViewById(R.id.complete_right_tips);
         complete_right_tips.setText(context.getString(R.string.play_right_tips,rightnum));
-        AdUtils.openTestAd(context);
+//        AdUtils.openTestAd(context);
     }
 
     /**

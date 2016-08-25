@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import partygames.shirley.com.baselib.utils.SoundPlayer;
+
 public class UnderCoverGuess extends UnderBaseActivity implements View.OnClickListener, AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener {
     private static final int NORMAL_SUCCESS = 1;
     private static final int UNDER_SUCCESS = 2;
@@ -113,7 +115,7 @@ public class UnderCoverGuess extends UnderBaseActivity implements View.OnClickLi
             item.strContent = content[i];
             if (content[i].equals(underCoverWord)) {
                 item.role = ROLE_UNDER;
-            } else if (content[i].equals(context.getString(R.string.blank))) {
+            } else if (content[i].equals(getResources().getString(R.string.blank))) {
                 item.role = ROLE_BLANK;
             } else {
                 item.role = ROLE_NORMAL;

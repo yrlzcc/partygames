@@ -1,63 +1,174 @@
 package partygames.shirley.com.partygames;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.pgyersdk.javabean.AppBean;
+import com.pgyersdk.update.PgyUpdateManager;
+import com.pgyersdk.update.UpdateManagerListener;
+import com.umeng.socialize.UMShareListener;
+import com.umeng.socialize.bean.SHARE_MEDIA;
+
 import partygames.shirley.com.baselib.BaseActivity;
-import partygames.shirley.com.partygames.view.CircleMenuLayout;
+import partygames.shirley.com.baselib.SettingPreferences;
+import partygames.shirley.com.baselib.utils.DialogUtils;
+import partygames.shirley.com.baselib.view.RoundSpinView;
 import partygames.shirley.com.playandguesslib.GMenuActivity;
+import partygames.shirley.com.turntablelib.TurningActivity;
 import partygames.shirley.com.undercoverlib.UnderCoverSetting;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements RoundSpinView.onRoundSpinViewListener, View.OnClickListener, UMShareListener {
 
-    private CircleMenuLayout mCircleMenuLayout;
-
-    private String[] mItemTexts = new String[] { "你比我猜", "谁是卧底", "真心话大冒险",
-            "婚礼游戏", "杀人游戏", "摇骰子","游戏惩罚"};
-    private int[] mItemImgs = new int[] { R.drawable.home_mbank_1_normal,
-            R.drawable.home_mbank_2_normal, R.drawable.home_mbank_3_normal,
-            R.drawable.home_mbank_4_normal, R.drawable.home_mbank_5_normal,
-            R.drawable.home_mbank_6_normal,R.drawable.home_mbank_6_normal  };
+    private RoundSpinView rsv_test;
+    private Context context;
+    private ImageView guess_menu_sound;
+    private DialogUtils dialogUtils = null;
+    private Dialog showHelpDialog = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
+        context = this;
+        initView();
+        isSoundOpen = SettingPreferences.getSettingValue(context,SettingPreferences.KEY_SETTING_SOUND,true);
+        guess_menu_sound = (ImageView)findViewById(R.id.guess_menu_sound);
+        guess_menu_sound.setOnClickListener(this);
+        setSoundBack();
+        findViewById(R.id.guess_menu_help).setOnClickListener(this);
+        findViewById(R.id.guess_menu_share).setOnClickListener(this);
+        checkUpdate(context);
+    }
 
-        mCircleMenuLayout = (CircleMenuLayout) findViewById(R.id.id_menulayout);
-        mCircleMenuLayout.setMenuItemIconsAndTexts(mItemImgs, mItemTexts);
+    private void initView(){
+        rsv_test = (RoundSpinView)this.findViewById(R.id.rsv_test);
+        rsv_test.setOnRoundSpinViewListener(this);
+    }
+
+    /**
+     * 设置声音按钮的背景
+     */
+    private void setSoundBack(){
+        if(isSoundOpen){
+            guess_menu_sound.setImageResource(partygames.shirley.com.playandguesslib.R.mipmap.sound_btn_on);
+        }
+        else{
+            guess_menu_sound.setImageResource(partygames.shirley.com.playandguesslib.R.mipmap.sound_btn_off);
+        }
+    }
+
+    @Override
+    public void onSingleTapUp(int position) {
+        // TODO Auto-generated method stub
+        if(position == 0){
+            Intent intent = new Intent(MainActivity.this,GMenuActivity.class);
+            startActivity(intent);
+        }
+        else if(position == 1){
+            Intent intent = new Intent(MainActivity.this,UnderCoverSetting.class);
+            startActivity(intent);
+        }
+        else if(position == 2){
+            Intent intent = new Intent(MainActivity.this,TurningActivity.class);
+            startActivity(intent);
+        }
+        else if(position == 3){
+            Intent intent = new Intent(MainActivity.this,GameListActivity.class);
+            startActivity(intent);
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.guess_menu_sound) {
+            isSoundOpen = !isSoundOpen;
+            SettingPreferences.setSettingValue(context, SettingPreferences.KEY_SETTING_SOUND, isSoundOpen);
+            setSoundBack();
+        }
+        else if(id == R.id.guess_menu_help){
+//            showHelpDialog();
+//            AdUtils.openAd(context);
+            Intent intent = new Intent(context,HelpActivity.class);
+            startActivity(intent);
+        }
+//        else if(id == R.id.guess_menu_share){
+//            ShareUtils.getInstance().showShare(MainActivity.this,context.getString(R.string.share_content).toString(),MainActivity.this);
+//        }
+    }
 
 
+    /**
+     * 帮助对话框
+     *
+     */
+//    public void showHelpDialog() {
+//        if (showHelpDialog != null) {
+//            showHelpDialog.dismiss();
+//        }
+//        showHelpDialog = new Dialog(context, partygames.shirley.com.playandguesslib.R.style.CustomDialog);
+//        View view = View.inflate(context, R.layout.help_dialog, null);
+//        showHelpDialog.setContentView(view);
+//        DisplayMetrics outMetrics  = context.getResources().getDisplayMetrics();
+//        int width = outMetrics.widthPixels > outMetrics.heightPixels ? outMetrics.heightPixels : outMetrics.widthPixels;
+////        chooseTimeDialog.getWindow().setLayout(width-100, 0);
+//        showHelpDialog.show();
+//    }
 
-        mCircleMenuLayout.setOnMenuItemClickListener(new CircleMenuLayout.OnMenuItemClickListener()
-        {
+    private void checkUpdate(final Context context) {
+        PgyUpdateManager.register(this,
+                new UpdateManagerListener() {
 
-            @Override
-            public void itemClick(View view, int pos)
-            {
-                Toast.makeText(MainActivity.this, mItemTexts[pos],
-                        Toast.LENGTH_SHORT).show();
-                if(pos == 0){
-                    Intent intent = new Intent(MainActivity.this,GMenuActivity.class);
-                    startActivity(intent);
+                    @Override
+                    public void onUpdateAvailable(final String result) {
+                        System.out.println("onUpdateAvailable:" + result);
+                        // 将新版本信息封装到AppBean中
+                        final AppBean appBean = getAppBeanFromString(result);
+                        dialogUtils = new DialogUtils(context, "更新", appBean.getReleaseNote(), new DialogUtils.OnDialogSelectId() {
+                            @Override
+                            public void onClick(int whichButton) {
+                                switch (whichButton) {
+                                    case 0:
+                                        dialogUtils.dismiss();
+                                        break;
+                                    case 1:
+                                        dialogUtils.dismiss();
+                                        startDownloadTask(MainActivity.this,
+                                                appBean.getDownloadURL());
+                                        break;
+                                }
+                            }
+                        });
+                        dialogUtils.show();
+                        dialogUtils.setConfirmText(context.getResources().getString(partygames.shirley.com.playandguesslib.R.string.download_tips));
+                    }
+
+                    @Override
+                    public void onNoUpdateAvailable() {
+                        System.out.println("onNoUpdateAvailable-------------------");
+                    }
                 }
-                else if(pos == 1){
-                    Intent intent = new Intent(MainActivity.this,UnderCoverSetting.class);
-                    startActivity(intent);
-                }
 
-            }
+        );
+    }
 
-            @Override
-            public void itemCenterClick(View view)
-            {
-                Toast.makeText(MainActivity.this,
-                        "you can do something just like ccb  ",
-                        Toast.LENGTH_SHORT).show();
+    @Override
+    public void onResult(SHARE_MEDIA share_media) {
+        Toast.makeText(this, " 分享成功啦", Toast.LENGTH_SHORT).show();
+    }
 
-            }
-        });
+    @Override
+    public void onError(SHARE_MEDIA share_media, Throwable throwable) {
+        Toast.makeText(this," 分享失败啦", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onCancel(SHARE_MEDIA share_media) {
+        Toast.makeText(this," 分享取消啦", Toast.LENGTH_SHORT).show();
     }
 }

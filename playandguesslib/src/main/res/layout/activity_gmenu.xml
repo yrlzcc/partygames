@@ -12,28 +12,45 @@
         <!--android:layout_height="wrap_content"-->
         <!--android:gravity="center"-->
         <!--android:orientation="horizontal">-->
-
-    <LinearLayout
-        android:id="@+id/ll_menu"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content">
 
-    <ImageView
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/setting_back"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+    <TextView
         android:id="@+id/guess_menu_food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:src="@mipmap/menu_food"
-        android:text="随机"/>
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/btn_type_selector"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="食物"/>
 
-        <ImageView
+        <TextView
             android:id="@+id/guess_menu_chengyu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/menu_chengyu"
+            android:padding="5dp"
+            android:background="@drawable/btn_type_selector"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="成语"
             android:layout_margin="10dp"/>
     <!--</LinearLayout>-->
 
@@ -46,19 +63,29 @@
         <!--android:gravity="center"-->
         <!--android:orientation="horizontal">-->
 
-    <ImageView
+    <TextView
         android:id="@+id/guess_menu_tiyu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/menu_sport"
+        android:padding="5dp"
+        android:background="@drawable/btn_type_selector"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="体育"
         android:layout_margin="10dp"/>
 
-    <ImageView
+    <TextView
         android:id="@+id/guess_menu_song"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:src="@mipmap/menu_songs"/>
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/btn_type_selector"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="歌曲"
+        android:gravity="center"/>
     <!--</LinearLayout>-->
 
     <!--<LinearLayout-->
@@ -68,19 +95,40 @@
         <!--android:layout_height="wrap_content"-->
         <!--android:gravity="center"-->
         <!--android:orientation="horizontal">-->
-    <ImageView
+    <TextView
         android:id="@+id/guess_menu_popular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/menu_popular"
-        android:layout_margin="10dp"/>
+        android:padding="10dp"
+        android:background="@drawable/btn_type_selector"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="明星"
+        android:layout_margin="5dp"/>
 
-    <ImageView
+    <TextView
         android:id="@+id/guess_menu_film"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/menu_film"
-        android:layout_margin="10dp"/>
+        android:padding="10dp"
+        android:background="@drawable/btn_type_selector"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="电影"
+        android:layout_margin="5dp"/>
     <!--</LinearLayout>-->
 </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialog_choose_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:src="@mipmap/playandguess_menu_title" />
+
+    </RelativeLayout>
 </RelativeLayout>

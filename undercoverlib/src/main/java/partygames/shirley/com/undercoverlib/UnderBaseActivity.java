@@ -46,6 +46,7 @@ import java.util.Set;
 
 import partygames.shirley.com.baselib.BaseActivity;
 import partygames.shirley.com.baselib.SettingPreferences;
+import partygames.shirley.com.baselib.utils.SoundPlayer;
 
 /**
  * @author wanhin
@@ -303,7 +304,7 @@ public class UnderBaseActivity extends BaseActivity{
 			contentStr += content[i] + "_";
 		}
 		contentStr = contentStr.substring(0, contentStr.length() - 1);
-		System.out.println("undercover  setContent:" + contentStr);
+//		System.out.println("undercover  setContent:" + contentStr);
 		SettingPreferences.setSettingValue(context,SettingPreferences.UNDERCOVER_SETTING_CONTENT,contentStr);
 	}
 

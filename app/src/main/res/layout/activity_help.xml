@@ -2,10 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/top_tips_back">
+    android:background="@mipmap/back">
 
     <ScrollView
         android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:scrollbars="none"
+        android:padding="10dp"
+        android:background="@drawable/help_back"
         android:layout_height="match_parent">
 
     <LinearLayout
@@ -19,6 +26,7 @@
             android:layout_width="wrap_content"
             android:text="你演我猜"
             android:textSize="28dp"
+            android:textColor="@color/color_dialog_tv_content"
             android:layout_height="wrap_content" />
 
         <TextView
@@ -34,6 +42,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:text="@string/谁是卧底"
+            android:textColor="@color/color_dialog_tv_content"
             android:textSize="28dp"
             android:layout_height="wrap_content" />
 

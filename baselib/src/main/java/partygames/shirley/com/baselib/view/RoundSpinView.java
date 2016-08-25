@@ -6,10 +6,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
-import android.graphics.PathEffect;
 import android.graphics.Rect;
 import android.os.Handler;
 import android.os.Message;
@@ -33,7 +31,7 @@ public class RoundSpinView extends View {
     // stone列表
     private BigStone[] mStones;
     // 数目
-    private static final int STONE_COUNT = 2;
+    private static final int STONE_COUNT = 4;
 
     // 圆心坐标
     private int mPointX = 0, mPointY = 0;
@@ -83,12 +81,12 @@ public class RoundSpinView extends View {
             startMenu = a.getResourceId(R.styleable.RoundSpinView_menuStart, 0);
         }
         pfd = new PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG|Paint.FILTER_BITMAP_FLAG);
-        mPaint.setColor(Color.WHITE);
-        mPaint.setStrokeWidth(2);
+        mPaint.setColor(Color.parseColor("#ffb1e17d"));
+        mPaint.setStrokeWidth(10);
         mPaint.setAntiAlias(true); //消除锯齿
         mPaint.setStyle(Paint.Style.STROKE); //绘制空心圆
-        PathEffect effects = new DashPathEffect(new float[]{5,5,5,5},1);
-        mPaint.setPathEffect(effects);
+//        PathEffect effects = new DashPathEffect(new float[]{5,5,5,5},1);
+//        mPaint.setPathEffect(effects);
 
 
         quadrantTouched = new boolean[] { false, false, false, false, false };
@@ -107,7 +105,7 @@ public class RoundSpinView extends View {
 
         //初始化半径和菜单半径
         mRadius = mPointX-mPointX/5;
-        menuRadius = (int)(mPointX/5.5);
+        menuRadius = (int)(mPointX/4.5);
 
         computeCoordinates();
     }

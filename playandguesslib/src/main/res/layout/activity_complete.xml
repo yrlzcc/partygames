@@ -36,12 +36,17 @@
         android:layout_width="match_parent"
         android:layout_toRightOf="@id/complete_ll_left"
         android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
         android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/complete_right_tips"
             android:layout_width="wrap_content"
             android:text="您答对了0道题"
+            android:textColor="@color/tv_dialog_text"
             android:layout_margin="10dp"
             android:textSize="24dp"
             android:layout_height="wrap_content" />
@@ -49,7 +54,7 @@
         <ListView
             android:id="@+id/complete_lv_list"
             android:padding="20dp"
-            android:background="@mipmap/base"
+            android:background="@drawable/setting_back"
             android:layout_width="match_parent"
             android:layout_height="match_parent"></ListView>
 

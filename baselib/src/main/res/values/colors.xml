@@ -42,4 +42,7 @@
     <color name="mode_color_7">#0d112d</color><!--按钮背景-->
     <color name="mode_color_8">#482332</color><!--按钮背景-->
     <color name="mode_color_9">#bab9ba</color><!--按钮背景-->
+
+    <color name="tv_dialog_text">#ff85593e</color>   <!-- dialog上文字颜色-->
+    <color name="top_tips_back">#f8e8b0</color>
 </resources>

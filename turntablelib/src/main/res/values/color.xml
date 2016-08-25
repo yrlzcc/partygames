@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="turn_back1">#ff0000</color>
+    <color name="turn_back2">#00ff00</color>
+    <color name="gamegreen">#BEEEA9</color>
+    <color name="gamepurple">#AE7BB3</color>
+    <color name="gameyellow">#D9A56A</color>
+    <color name="GREEN">#3d9140</color>
+</resources>

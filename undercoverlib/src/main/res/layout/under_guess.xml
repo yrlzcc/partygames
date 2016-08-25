@@ -50,7 +50,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@color/top_tips_back"
         android:gravity="center_horizontal"
         android:padding="10dp"
         android:text="tips"
@@ -59,13 +58,14 @@
 
     <TextView
         android:id="@+id/tv_forget_word_show"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@color/top_tips_back"
+        android:background="@mipmap/forget_word_back"
         android:gravity="center"
-        android:textSize="28dp"
-        android:text="tips"
+        android:textSize="36dp"
+        android:text="霸王别姬"
+        android:textColor="@color/tv_dialog_text"
         android:visibility="gone" />
 
 </RelativeLayout>

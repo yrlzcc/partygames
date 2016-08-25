@@ -1,1 +1,1 @@
-include ':app', ':baselib', ':playandguesslib', ':undercoverlib'
+include ':app', ':baselib', ':social_sdk_library_project',':playandguesslib', ':undercoverlib', ':turntablelib'

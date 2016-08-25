@@ -13,6 +13,6 @@
     <color name="gameblue2">#46A3DF</color>
     <color name="gamered2">#942630</color>
 
-    <color name="tv_dialog_text">#ff9e6a2a</color>   <!-- dialog上文字颜色-->
+    <color name="tv_dialog_text">#ff85593e</color>   <!-- dialog上文字颜色-->
     <color name="top_tips_back">#f8e8b0</color>
 </resources>

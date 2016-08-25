@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">undercover</string>
     <string name="add">+</string>
-    <string name="blank"></string>
+    <string name="blank">白板</string>
     <string name="开始游戏">开始游戏</string>
 
     <string name="返回">返回</string>

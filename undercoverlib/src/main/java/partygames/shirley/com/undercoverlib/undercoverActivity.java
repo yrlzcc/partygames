@@ -18,6 +18,7 @@ import org.json.JSONObject;
 import java.util.Random;
 
 import partygames.shirley.com.baselib.SettingPreferences;
+import partygames.shirley.com.baselib.utils.SoundPlayer;
 
 public class UndercoverActivity extends UnderBaseActivity {
     private String underWord;
@@ -61,7 +62,7 @@ public class UndercoverActivity extends UnderBaseActivity {
         txtName = (TextView) findViewById(R.id.txtName);
         imagePan = (Button) findViewById(R.id.imagePan);
         imagebg = (ImageView) findViewById(R.id.imagebg);
-        blank = "";
+        blank = getResources().getString(R.string.blank);
         random = new Random();
         content = new String[0];
         gameInfo = getSharedPreferences("gameinfo", 0);
@@ -143,7 +144,12 @@ public class UndercoverActivity extends UnderBaseActivity {
         }
         txtName.setText(strTips);
         setContentVis(false);
-        txtShenfen.setText(content[index - 1]);
+        if(content[index-1].equals(blank)){
+            txtShenfen.setText("");
+        }
+        else {
+            txtShenfen.setText(content[index - 1]);
+        }
     }
 
     protected void Log(String string) {

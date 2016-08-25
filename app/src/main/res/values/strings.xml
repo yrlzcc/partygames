@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">聚会宝</string>
+    <string name="share_content">聚会就用聚会宝，你演我猜，谁是卧底，各种聚会游戏，你也来试试吧！</string>
     <string name="menu_help">tips1:将手机屏幕对准你的小伙伴，背面对着自己\ntips2:回答正确，手机向下翻转，屏幕对着地面\ntips3:实在想不出来，想跳过，手机向上翻转，屏幕对着天空\ntips4:每次翻转过后，回到屏幕对着小伙伴状态，切换到下一题</string>
     <string name="menu_undercover_help">tips1 游戏人数：要求4人以上，有3种基本身份，平民、卧底、白板。其中可以选择是否在游戏中加入白板。\n
 tips2 身份词：所有平民获得相同词语；卧底获得与平民相似但不同的词语（如卧底多于1人，则所有卧底词相同）；白板则不获得任何词语。\n
