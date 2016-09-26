@@ -28,12 +28,12 @@
         "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\layout\\messenger_button_send_white_small.xml"
     },
     {
-        "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\umeng_socialize_full_alert_dialog.xml",
-        "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\layout\\umeng_socialize_full_alert_dialog.xml"
-    },
-    {
         "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\messenger_button_send_blue_round.xml",
         "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\umeng_socialize_full_alert_dialog.xml",
+        "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\layout\\umeng_socialize_full_alert_dialog.xml"
     },
     {
         "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\umeng_socialize_full_curtain.xml",

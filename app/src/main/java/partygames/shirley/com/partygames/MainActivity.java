@@ -16,7 +16,9 @@ import com.umeng.socialize.bean.SHARE_MEDIA;
 
 import partygames.shirley.com.baselib.BaseActivity;
 import partygames.shirley.com.baselib.SettingPreferences;
+import partygames.shirley.com.baselib.utils.AdUtils;
 import partygames.shirley.com.baselib.utils.DialogUtils;
+import partygames.shirley.com.baselib.utils.ShareUtils;
 import partygames.shirley.com.baselib.view.RoundSpinView;
 import partygames.shirley.com.playandguesslib.GMenuActivity;
 import partygames.shirley.com.turntablelib.TurningActivity;
@@ -43,6 +45,7 @@ public class MainActivity extends BaseActivity implements RoundSpinView.onRoundS
         findViewById(R.id.guess_menu_help).setOnClickListener(this);
         findViewById(R.id.guess_menu_share).setOnClickListener(this);
         checkUpdate(context);
+        AdUtils.openTestAd(this);
     }
 
     private void initView(){
@@ -55,10 +58,10 @@ public class MainActivity extends BaseActivity implements RoundSpinView.onRoundS
      */
     private void setSoundBack(){
         if(isSoundOpen){
-            guess_menu_sound.setImageResource(partygames.shirley.com.playandguesslib.R.mipmap.sound_btn_on);
+            guess_menu_sound.setImageResource(R.mipmap.sound_btn_on);
         }
         else{
-            guess_menu_sound.setImageResource(partygames.shirley.com.playandguesslib.R.mipmap.sound_btn_off);
+            guess_menu_sound.setImageResource(R.mipmap.sound_btn_off);
         }
     }
 
@@ -66,18 +69,22 @@ public class MainActivity extends BaseActivity implements RoundSpinView.onRoundS
     public void onSingleTapUp(int position) {
         // TODO Auto-generated method stub
         if(position == 0){
+            AdUtils.openTestAd(MainActivity.this);
             Intent intent = new Intent(MainActivity.this,GMenuActivity.class);
             startActivity(intent);
         }
         else if(position == 1){
+            AdUtils.openTestAd(MainActivity.this);
             Intent intent = new Intent(MainActivity.this,UnderCoverSetting.class);
             startActivity(intent);
         }
         else if(position == 2){
+            AdUtils.openTestAd(MainActivity.this);
             Intent intent = new Intent(MainActivity.this,TurningActivity.class);
             startActivity(intent);
         }
         else if(position == 3){
+            AdUtils.openTestAd(MainActivity.this);
             Intent intent = new Intent(MainActivity.this,GameListActivity.class);
             startActivity(intent);
         }
@@ -87,19 +94,22 @@ public class MainActivity extends BaseActivity implements RoundSpinView.onRoundS
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.guess_menu_sound) {
+            AdUtils.openTestAd(MainActivity.this);
             isSoundOpen = !isSoundOpen;
             SettingPreferences.setSettingValue(context, SettingPreferences.KEY_SETTING_SOUND, isSoundOpen);
             setSoundBack();
         }
         else if(id == R.id.guess_menu_help){
+            AdUtils.openTestAd(MainActivity.this);
 //            showHelpDialog();
 //            AdUtils.openAd(context);
             Intent intent = new Intent(context,HelpActivity.class);
             startActivity(intent);
         }
-//        else if(id == R.id.guess_menu_share){
-//            ShareUtils.getInstance().showShare(MainActivity.this,context.getString(R.string.share_content).toString(),MainActivity.this);
-//        }
+        else if(id == R.id.guess_menu_share){
+            AdUtils.openTestAd(MainActivity.this);
+            ShareUtils.getInstance().showShare(MainActivity.this,context.getString(R.string.share_content).toString(),MainActivity.this);
+        }
     }
 
 

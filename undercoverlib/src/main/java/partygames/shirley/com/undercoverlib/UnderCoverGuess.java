@@ -210,7 +210,7 @@ public class UnderCoverGuess extends UnderBaseActivity implements View.OnClickLi
 //        punishBtn.setText(getUnderStr());
         cleanStatus();
         setGameIsNew(ConstantControl.GAME_UNDERCOVER, false);
-        showHelpDialog(success);
+        showSuccessDialog(success);
     }
 
     protected String getUnderStr() {
@@ -258,12 +258,15 @@ public class UnderCoverGuess extends UnderBaseActivity implements View.OnClickLi
         // TODO Auto-generated method stub
         // game_guess_finish
         super.finish();
+        if(showCompleteDialog != null) {
+            showCompleteDialog.dismiss();
+        }
     }
 
     /**
      * 帮助对话框
      */
-    public void showHelpDialog(int success) {
+    public void showSuccessDialog(int success) {
         if (showCompleteDialog != null) {
             showCompleteDialog.dismiss();
         }
@@ -295,6 +298,9 @@ public class UnderCoverGuess extends UnderBaseActivity implements View.OnClickLi
         btn_restart.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(showCompleteDialog != null) {
+                    showCompleteDialog.dismiss();
+                }
                 finish();
             }
         });
@@ -303,6 +309,9 @@ public class UnderCoverGuess extends UnderBaseActivity implements View.OnClickLi
         punishBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(showCompleteDialog != null) {
+                    showCompleteDialog.dismiss();
+                }
                 Intent goMain = new Intent();
                 goMain.setClass(UnderCoverGuess.this, UnderPunishActivity.class);
                 startActivity(goMain);
@@ -347,6 +356,7 @@ public class UnderCoverGuess extends UnderBaseActivity implements View.OnClickLi
 
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        System.out.print("onitemlongclick");
         if(gridItems == null){
             return false;
         }
@@ -375,4 +385,11 @@ public class UnderCoverGuess extends UnderBaseActivity implements View.OnClickLi
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        if(showCompleteDialog != null){
+            showCompleteDialog.dismiss();
+        }
+        super.onDestroy();
+    }
 }

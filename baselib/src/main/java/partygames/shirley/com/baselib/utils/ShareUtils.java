@@ -3,7 +3,6 @@ package partygames.shirley.com.baselib.utils;
 import android.app.Activity;
 import android.graphics.BitmapFactory;
 
-import com.umeng.analytics.MobclickAgent;
 import com.umeng.socialize.ShareAction;
 import com.umeng.socialize.ShareContent;
 import com.umeng.socialize.UMShareListener;
@@ -38,16 +37,17 @@ public class ShareUtils {
      *
      */
     public void showShare(Activity activity,String strText,UMShareListener listener) {
-        Constans.SHAREURL= MobclickAgent.getConfigParams(activity, "shareUrl");
+//        Constans.SHAREURL= MobclickAgent.getConfigParams(activity, "party_shareurl");
+        Constans.SHAREURL = "https://www.pgyer.com/partygames";
         System.out.println("shareurl:" + Constans.SHAREURL);
         UMImage image = new UMImage(activity,
                 BitmapFactory.decodeResource(activity.getResources(),R.drawable.icon));
         ShareContent content = new ShareContent();
-        content.mTitle = "高智商游戏";
+        content.mTitle = "聚会神器";
         content.mText = strText;
         new ShareAction(activity).setDisplayList(displaylist)
                 .withText(strText)
-                .withTitle("高智商游戏")
+                .withTitle("聚会神器")
                 .setShareContent(content)
                 .withMedia(image)
                 .withTargetUrl(Constans.SHAREURL)

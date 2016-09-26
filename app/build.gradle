@@ -35,8 +35,8 @@ android {
         applicationId "partygames.shirley.com.partygames"
         minSdkVersion 11
         targetSdkVersion 23
-        versionCode 2
-        versionName "1.0"
+        versionCode 4
+        versionName "1.2.1"
     }
 
     /**
@@ -72,13 +72,13 @@ android {
          * 配置编译类型
          */
         debug {
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
         }
         release {
             minifyEnabled false
             zipAlignEnabled false
             // 移除无用的resource文件
-            shrinkResources true
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
         }
@@ -97,7 +97,7 @@ android {
 //        anfen {}
 //        anbei {}
 //        anzhuozhijia {}
-//        youmi {}
+        youmi {}
 //        tengxun {}
         '91' {}
 //        jifeng {}

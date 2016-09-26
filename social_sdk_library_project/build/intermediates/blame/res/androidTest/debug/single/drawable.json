@@ -44,12 +44,12 @@
         "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_normal.png"
     },
     {
-        "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp.png",
-        "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp.png"
-    },
-    {
         "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_off.png",
         "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_gmail_off.png"
+    },
+    {
+        "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp.png",
+        "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp.png"
     },
     {
         "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sms_on.png",
@@ -368,12 +368,12 @@
         "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_line.png"
     },
     {
-        "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
-        "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_login_silver_background.xml"
-    },
-    {
         "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_music.png",
         "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_music.png"
+    },
+    {
+        "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
+        "source": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_login_silver_background.xml"
     },
     {
         "merged": "E:\\partyworkspace\\partygames\\social_sdk_library_project\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qq_on.png",

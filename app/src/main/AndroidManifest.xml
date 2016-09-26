@@ -90,22 +90,22 @@
 
 
         <!-- 有米 -->
-        <!--<activity-->
-            <!--android:name="th.ds.wa.BV"-->
-            <!--android:configChanges="keyboard|keyboardHidden|orientation|screenSize"-->
-            <!--android:theme="@android:style/Theme.Light.NoTitleBar" />-->
+        <activity
+            android:name="th.ds.wa.BV"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
 
-        <!--<service-->
-            <!--android:name="th.ds.wa.ED"-->
-            <!--android:exported="false" />-->
+        <service
+            android:name="th.ds.wa.ED"
+            android:exported="false" />
 
-        <!--<receiver android:name="th.ds.wa.TR">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.PACKAGE_ADDED" />-->
+        <receiver android:name="th.ds.wa.TR">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
 
-                <!--<data android:scheme="package" />-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
         <!-- 有米结束 -->
         <activity android:name=".MainActivity" />
         <activity android:name=".HelpActivity" />
