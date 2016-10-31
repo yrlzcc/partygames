@@ -31,73 +31,26 @@
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79d4b0b6-d85e-4600-9282-823e5ee1187f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/assets/dex.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/btn_share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baselib/libs/YoumiSdk_v6.2.2_2016-07-07.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/partygames/shirley/com/partygames/view/CircleMenuLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/film.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/food.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/menu_chengyu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/menu_film.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/menu_food.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/menu_popular.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/menu_songs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/menu_sport.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/song.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/sport.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/title_life.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-xxhdpi/home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/btn_act.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/btn_photo_pressed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/btn_purple_2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/btn_purple_2x_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/btn_purple_pressed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/circle_purple_2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/circle_purple_2x_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/circle_purple_pressed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/default_photo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/default_photo3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/fang_pink_pressed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/fang_purple_pressed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/heart_2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/heart_gray_2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/tag_green_2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/tag_green_2x_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/tag_green_pressed.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/SocialSDK_QQZone_3.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/SocialSDK_QQZone_3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/SocialSDK_WeiXin_1.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/SocialSDK_WeiXin_1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/SocialSDK_WeiXin_2.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/SocialSDK_WeiXin_2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/mta-sdk-1.6.2.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/mta-sdk-1.6.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/open_sdk_r5509.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/debug/libs/open_sdk_r5509.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/SocialSDK_QQZone_3.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/SocialSDK_QQZone_3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/SocialSDK_WeiXin_1.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/SocialSDK_WeiXin_1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/SocialSDK_WeiXin_2.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/SocialSDK_WeiXin_2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/mta-sdk-1.6.2.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/mta-sdk-1.6.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/open_sdk_r5509.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/bundles/release/libs/open_sdk_r5509.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/transforms/mergeJavaRes/debug/jars/2/3/main.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/transforms/mergeJavaRes/debug/jars/2/3/main.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/transforms/mergeJavaRes/release/jars/2/3/main.jar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/transforms/mergeJavaRes/release/jars/2/3/main.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/outputs/aar/social_sdk_library_project-debug.aar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/outputs/aar/social_sdk_library_project-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/outputs/aar/social_sdk_library_project-release.aar" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/outputs/aar/social_sdk_library_project-release.aar" />
+    <list default="true" id="79d4b0b6-d85e-4600-9282-823e5ee1187f" name="Default" comment="增加分享功能">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.2/partygame20160826_v_360_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.2/partygame20160826_v_91_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.2/partygame20160826_v_android_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.2/partygame20160826_v_baidu_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.2/partygame20160826_v_update_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.21/partygame20160908_v_360_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.21/partygame20160908_v_android_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.21/partygame20160908_v_baidu_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.21/partygame20160908_v_update_release.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.21/partygame20160908_v_youmi_release.apk" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partygames.shirley.com.undercoverlib/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partygames.shirley.com.undercoverlib/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partygames.shirley.com.undercoverlib/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partygames.shirley.com.undercoverlib/src/androidTest/java/partygames/shirley/com/partygamesshirleycomundercoverlib/ApplicationTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/raw/Pass.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/java/com/undercover/MyClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/drawable/local_setting.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undercoverlib/src/main/res/mipmap-xxhdpi/seek_thumb.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/partygames/shirley/com/partygames/BaseApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/partygames/shirley/com/partygames/BaseApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/partygames/shirley/com/partygames/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/partygames/shirley/com/partygames/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_game_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_game_detail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baselib/src/main/java/partygames/shirley/com/baselib/utils/AdUtils.java" afterPath="$PROJECT_DIR$/baselib/src/main/java/partygames/shirley/com/baselib/utils/AdUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baselib/src/main/java/partygames/shirley/com/baselib/utils/ShareUtils.java" afterPath="$PROJECT_DIR$/baselib/src/main/java/partygames/shirley/com/baselib/utils/ShareUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/blame/res/androidTest/debug/single/drawable.json" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/blame/res/androidTest/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/blame/res/androidTest/debug/single/layout.json" afterPath="$PROJECT_DIR$/social_sdk_library_project/build/intermediates/blame/res/androidTest/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/undercoverlib/src/main/java/partygames/shirley/com/undercoverlib/UnderCoverGuess.java" afterPath="$PROJECT_DIR$/undercoverlib/src/main/java/partygames/shirley/com/undercoverlib/UnderCoverGuess.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/btn_help.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/btn_help.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/sound_btn_off.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/sound_btn_off.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/sound_btn_on.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/sound_btn_on.png" />
     </list>
     <ignored path="partygames.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -161,14 +114,14 @@
       </file>
       <file leaf-file-name="activity_main2.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -185,7 +138,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6015152">
+            <state vertical-scroll-proportion="0.9069374">
               <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
               <folding />
             </state>
@@ -207,9 +160,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -10355,7 +10306,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1932" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -10383,6 +10334,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partygames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partygames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partygames" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -10435,29 +10408,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partygames" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partygames" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partygames" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -10523,15 +10474,15 @@
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Hybrid>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
       <Native>
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
       </Native>
       <Java />
-      <Hybrid>
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-      </Hybrid>
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
@@ -10558,15 +10509,15 @@
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Hybrid>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
       <Native>
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
       </Native>
       <Java />
-      <Hybrid>
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-      </Hybrid>
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
@@ -10744,15 +10695,15 @@
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Hybrid>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
       <Native>
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
       </Native>
       <Java />
-      <Hybrid>
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-      </Hybrid>
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
@@ -10817,41 +10768,47 @@
       <option name="project" value="LOCAL" />
       <updated>1472113987176</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="增加分享功能">
+      <created>1474868777118</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1474868777118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="0" width="1924" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16722783" sideWeight="0.33672377" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22446689" sideWeight="0.41702357" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22446689" sideWeight="0.58297646" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33108866" sideWeight="0.76070666" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2502806" sideWeight="0.4678801" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23681258" sideWeight="0.47216275" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22446689" sideWeight="0.41702357" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2312009" sideWeight="0.536859" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30190796" sideWeight="0.53602153" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13131313" sideWeight="0.49301076" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19914347" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122591004" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30190796" sideWeight="0.4639785" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16722783" sideWeight="0.33672377" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12258065" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2312009" sideWeight="0.536859" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19892474" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23681258" sideWeight="0.47216275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23340471" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23569024" sideWeight="0.4614561" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -10871,7 +10828,8 @@
     <MESSAGE value="你演我猜" />
     <MESSAGE value="谁是卧底" />
     <MESSAGE value="界面修改之后" />
-    <option name="LAST_COMMIT_MESSAGE" value="界面修改之后" />
+    <MESSAGE value="增加分享功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加分享功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -10930,25 +10888,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/game_list_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.9827585">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_list.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.5172415">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="35" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playandguesslib/src/main/res/drawable/btn_check_selector.xml">
@@ -10982,14 +10940,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/undercoverlib/src/main/res/layout/under_getword.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.1896553">
           <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playandguesslib/src/main/java/partygames/shirley/com/playandguesslib/GMenuActivity.java">
@@ -11007,29 +10965,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playandguesslib/src/main/res/layout/adapter_word_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/undercoverlib/src/main/res/drawable/bg1.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/undercoverlib/src/main/res/drawable/base.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
     </entry>
@@ -11039,14 +10997,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playandguesslib/src/main/res/layout/activity_gmenu.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.810345">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playandguesslib/src/main/res/mipmap-hdpi/base.png">
@@ -11055,33 +11013,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playandguesslib/src/main/res/layout/activity_complete.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5689654">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/undercoverlib/src/main/java/partygames/shirley/com/undercoverlib/UnderCoverSetting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/undercoverlib/src/main/res/layout/undercover_setting.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.086207">
           <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
@@ -11122,25 +11079,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/undercoverlib/src/main/res/layout/complete_dialog.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/undercoverlib/src/main/res/layout/complete_dialog.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/undercoverlib/src/main/res/values/style.xml">
@@ -11162,23 +11119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="991" column="73" selection-start-line="991" selection-start-column="73" selection-end-line="991" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#7631#7632#0" expanded="false" />
-            <element signature="e#7690#7691#0" expanded="false" />
-            <element signature="e#7726#7727#0" expanded="false" />
-            <element signature="e#7774#7775#0" expanded="false" />
-            <element signature="e#10353#10354#0" expanded="false" />
-            <element signature="e#10397#10398#0" expanded="false" />
-            <element signature="e#10430#10431#0" expanded="false" />
-            <element signature="e#10489#10490#0" expanded="false" />
-            <element signature="e#17162#17163#0" expanded="false" />
-            <element signature="e#17203#17204#0" expanded="false" />
-            <element signature="e#17390#17391#0" expanded="false" />
-            <element signature="e#17427#17428#0" expanded="false" />
-            <element signature="e#26199#26200#0" expanded="false" />
-            <element signature="e#26227#26228#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -11186,7 +11126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="200" column="5" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -11198,31 +11137,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baselib/src/main/res/layout/dialog_utils.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10648918">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baselib/src/main/java/partygames/shirley/com/baselib/utils/DialogUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="7" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#9054#9055#0" expanded="false" />
-            <element signature="e#9114#9115#0" expanded="false" />
-            <element signature="e#9260#9261#0" expanded="false" />
-            <element signature="e#9320#9321#0" expanded="false" />
-            <element signature="e#9466#9467#0" expanded="false" />
-            <element signature="e#9526#9527#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="false" />
-            <element signature="e#9739#9740#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -11237,7 +11165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16113745">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -11277,14 +11204,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/partygames/shirley/com/partygames/MainActivity.java">
@@ -11325,9 +11252,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -11341,7 +11266,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6015152">
+        <state vertical-scroll-proportion="0.9069374">
           <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding />
         </state>
